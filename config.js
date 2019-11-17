@@ -31,7 +31,7 @@ config.port = 6040; // Port to listen on
 /**
  * LISK node
  */
-config.lisk.host = process.env.LISK_HOST || '127.0.0.1';
+config.lisk.host = process.env.LISK_HOST || '108.61.188.98';
 config.lisk.port = process.env.LISK_PORT || 4000;
 config.lisk.apiPath = '/api';
 
@@ -55,7 +55,7 @@ config.cacheTTL = 20;
 // Collect logs (true - enabled, false - disabled)
 config.log.enabled = true;
 // Output for logs - can be device file or ordinary path
-config.log.output = ['/dev/stdout', './logs/explorer.log'];
+config.log.output = ['./logs/explorer.log'];
 // Log level - (trace, debug, info, warn, error)
 config.log.level = 'info';
 
@@ -63,7 +63,7 @@ config.log.level = 'info';
  * Header price tickers, Currency switcher
  */
 // Exchange rates support (true - enabled, false - disabled)
-config.exchangeRates.enabled = true;
+config.exchangeRates.enabled = false;
 // Interval in ms for checking exchange rates (default: 30 seconds)
 config.exchangeRates.updateInterval = 30000;
 
@@ -89,7 +89,7 @@ config.exchangeRates.exchanges.BTC.CNY = '1btcxe';
  * Market watcher
  */
 // Market watcher support (true - enabled, false - disabled)
-config.marketWatcher.enabled = true;
+config.marketWatcher.enabled = false;
 // Poloniex exchange support (true - enabled, false - disabled)
 config.marketWatcher.exchanges.poloniex = true;
 // Bittrex exchange support (true - enabled, false - disabled);
@@ -105,7 +105,7 @@ config.marketWatcher.orders.updateInterval = 15000;
  * Cache delegate info in order to replace address by username
  */
 // Delegate caching support (true - enabled, false - disabled)
-config.cacheDelegateAddress.enabled = true;
+config.cacheDelegateAddress.enabled = false;
 // Interval in ms for checking new delegates registration (default: 60 seconds)
 config.cacheDelegateAddress.updateInterval = 60000;
 
