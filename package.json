@@ -24,7 +24,7 @@
   },
   "scripts": {
     "start": "npm run start:local",
-    "start:local": "LISK_HOST=108.61.188.98 LISK_PORT=4000 node app.js",
+    "start:local": "LISK_HOST=95.179.164.107 LISK_PORT=4000 node app.js",
     "start:testnet": "LISK_HOST=testnet.lisk.io LISK_PORT=7000 node app.js",
     "start:mainnet": "LISK_HOST=explorer.lisk.io LISK_PORT=8000 node app.js",
     "test": "./node_modules/.bin/grunt test --verbose",

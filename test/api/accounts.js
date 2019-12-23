@@ -223,10 +223,10 @@ describe('Accounts API', () => {
 			});
 		});
 
-		it('using address with 101 votes should return all 101 votes', (done) => {
+		it('using address with 11 votes should return all 11 votes', (done) => {
 			getVotes(params.pkWithVotes, (err, res) => {
 				node.expect(res.body).to.have.property('success').to.not.be.equal(undefined);
-				node.expect(res.body.votes).to.have.lengthOf(101);
+				node.expect(res.body.votes).to.have.lengthOf(11);
 				node.expect(res.body).to.have.all.keys('success', 'meta', 'votes');
 				done();
 			});

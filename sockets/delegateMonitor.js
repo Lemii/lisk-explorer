@@ -266,7 +266,7 @@ module.exports = function (app, connectionHandler, socket) {
 		});
 	};
 
-	const getRound = height => Math.ceil(height / 101);
+	const getRound = height => Math.ceil(height / 11);
 
 	const getRoundDelegates = (nextForgers, height) => {
 		const currentRound = getRound(height);

@@ -22,7 +22,7 @@ Lisk Explorer is a feature-rich single page browser application with following f
 
 - [Delegate monitor](https://explorer.lisk.io/delegateMonitor)
   - Shows information about all register delegate accounts
-  - Live status of the 101 active delegates
+  - Live status of the 11 active delegates
 
 - [Network monitor](https://explorer.lisk.io/networkMonitor)
   - Shows live information about all nodes

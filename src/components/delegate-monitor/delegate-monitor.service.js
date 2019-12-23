@@ -64,7 +64,7 @@ const DelegateMonitor = function ($scope, $rootScope, forgingMonitor) {
 			d.forgingStatus = forgingMonitor.getStatus(d);
 		});
 
-		$scope.activeDelegates = active.delegates.slice(0, 5);
+		$scope.activeDelegates = active.delegates.slice(0, 11);
 
 		updateForgingTotals(active.delegates);
 		updateForgingProgress($scope.forgingTotals);
@@ -72,7 +72,7 @@ const DelegateMonitor = function ($scope, $rootScope, forgingMonitor) {
 
 	this.updateTotals = (active) => {
 		$scope.totalDelegates = active.totalCount || 0;
-		$scope.totalActive = 5;
+		$scope.totalActive = 11;
 
 		if ($scope.totalDelegates > $scope.totalActive) {
 			$scope.totalStandby = ($scope.totalDelegates - $scope.totalActive);

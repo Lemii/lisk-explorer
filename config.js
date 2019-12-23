@@ -31,7 +31,7 @@ config.port = 6040; // Port to listen on
 /**
  * LISK node
  */
-config.lisk.host = process.env.LISK_HOST || '108.61.188.98';
+config.lisk.host = process.env.LISK_HOST || '95.179.164.107';
 config.lisk.port = process.env.LISK_PORT || 4000;
 config.lisk.apiPath = '/api';
 
